@@ -13,6 +13,7 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xffffffff),
+      resizeToAvoidBottomInset: false,
       body: Stack(
         children: <Widget>[
           Pinned.fromPins(
@@ -31,26 +32,6 @@ class LoginPage extends StatelessWidget {
               decoration: BoxDecoration(
                 color: const Color(0xff373737),
                 border: Border.all(width: 1.0, color: const Color(0xff707070)),
-              ),
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(start: 60.0, end: 60.0),
-            Pin(size: 59.0, middle: 0.5905),
-            child: Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(30.0),
-                border: Border.all(width: 1.0, color: const Color(0xffc0b283)),
-              ),
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(start: 60.0, end: 60.0),
-            Pin(size: 59.0, middle: 0.4764),
-            child: Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(30.0),
-                border: Border.all(width: 1.0, color: const Color(0xffc0b283)),
               ),
             ),
           ),
@@ -95,7 +76,6 @@ class LoginPage extends StatelessWidget {
             child: TextField(
               textCapitalization: TextCapitalization.sentences,
               decoration: InputDecoration(
-                hintText: 'CORREO ELECTRONICO',
                 labelText: 'CORREO ELECTRONICO',
                 border: OutlineInputBorder(
                   borderRadius:  BorderRadius.circular(30.0)
@@ -112,12 +92,11 @@ class LoginPage extends StatelessWidget {
           ),
           Pinned.fromPins(
             Pin(size: 272.0, middle: 0.5),
-            Pin(size: 59.0, middle: 0.6873),
+            Pin(size: 59.0, middle: 0.5873),
             child: TextField(
               textCapitalization: TextCapitalization.sentences,
               decoration: InputDecoration(
-                hintText: 'Contraseña',
-                labelText: 'Contraseña',
+                labelText: 'CONTRASEÑA',
                 border: OutlineInputBorder(
                   borderRadius:  BorderRadius.circular(30.0)
                 ),
@@ -158,7 +137,7 @@ class LoginPage extends StatelessWidget {
                   ),
                   Pinned.fromPins(
                     Pin(size: 137.0, middle: 0.4912),
-                    Pin(size: 32.0, middle: 0.4444),
+                    Pin(size: 32.0, middle: 0.5544),
                     child: Text(
                       'Iniciar Sesión',
                       style: TextStyle(

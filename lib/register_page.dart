@@ -13,6 +13,7 @@ class RegisterPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xffffffff),
+      resizeToAvoidBottomInset: false,
       body: Stack(
         children: <Widget>[
           Pinned.fromPins(
@@ -35,106 +36,84 @@ class RegisterPage extends StatelessWidget {
             ),
           ),
           Pinned.fromPins(
-            Pin(start: 60.0, end: 60.0),
-            Pin(size: 59.0, middle: 0.3506),
-            child: Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(30.0),
-                border: Border.all(width: 1.0, color: const Color(0xffc0b283)),
+            Pin(size: 272.0, middle: 0.5033),
+            Pin(size: 59.0, middle: 0.356),
+            child: TextField(
+              textCapitalization: TextCapitalization.sentences,
+              decoration: InputDecoration(
+                labelText: 'CONTRASEÑA',
+                border: OutlineInputBorder(
+                  borderRadius:  BorderRadius.circular(30.0)
+                ),
               ),
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(start: 61.0, end: 59.0),
-            Pin(size: 59.0, middle: 0.5559),
-            child: Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(30.0),
-                border: Border.all(width: 1.0, color: const Color(0xffc0b283)),
-              ),
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(start: 60.0, end: 60.0),
-            Pin(size: 59.0, middle: 0.248),
-            child: Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(30.0),
-                border: Border.all(width: 1.0, color: const Color(0xffc0b283)),
-              ),
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(start: 60.0, end: 60.0),
-            Pin(size: 59.0, start: 126.0),
-            child: Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(30.0),
-                border: Border.all(width: 1.0, color: const Color(0xffc0b283)),
-              ),
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(start: 60.0, end: 60.0),
-            Pin(size: 59.0, middle: 0.4533),
-            child: Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(30.0),
-                border: Border.all(width: 1.0, color: const Color(0xffc0b283)),
-              ),
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(size: 126.0, middle: 0.5033),
-            Pin(size: 27.0, middle: 0.356),
-            child: Text(
-              'CONTRASEÑA',
               style: TextStyle(
                 fontFamily: 'Segoe UI',
-                fontSize: 18,
+                fontSize: 19,
                 color: const Color(0xff373737),
               ),
-              textAlign: TextAlign.left,
-            ),
+              textAlign: TextAlign.center,
+              onChanged: (valor){},
+            )
           ),
           Pinned.fromPins(
-            Pin(size: 101.0, middle: 0.5076),
-            Pin(size: 27.0, middle: 0.5539),
-            child: Text(
-              'DIRECCION',
+            Pin(size: 272.0, middle: 0.5076),
+            Pin(size: 59.0, middle: 0.5539),
+            child: TextField(
+              textCapitalization: TextCapitalization.sentences,
+              decoration: InputDecoration(
+                labelText: 'DIRECCION',
+                border: OutlineInputBorder(
+                  borderRadius:  BorderRadius.circular(30.0)
+                ),
+              ),
               style: TextStyle(
                 fontFamily: 'Segoe UI',
-                fontSize: 18,
+                fontSize: 19,
                 color: const Color(0xff373737),
               ),
-              textAlign: TextAlign.left,
-            ),
+              textAlign: TextAlign.center,
+              onChanged: (valor){},
+            )
           ),
           Pinned.fromPins(
-            Pin(size: 208.0, middle: 0.5045),
-            Pin(size: 27.0, middle: 0.257),
-            child: Text(
-              'CORREO ELECTRONICO',
+            Pin(size: 272.0, middle: 0.5045),
+            Pin(size: 59.0, middle: 0.257),
+            child: TextField(
+              textCapitalization: TextCapitalization.sentences,
+              decoration: InputDecoration(
+                labelText: 'CORREO ELECTRONICO',
+                border: OutlineInputBorder(
+                  borderRadius:  BorderRadius.circular(30.0)
+                ),
+              ),
               style: TextStyle(
                 fontFamily: 'Segoe UI',
-                fontSize: 18,
+                fontSize: 19,
                 color: const Color(0xff373737),
               ),
-              textAlign: TextAlign.left,
-            ),
+              textAlign: TextAlign.center,
+              onChanged: (valor){},
+            )
           ),
           Pinned.fromPins(
-            Pin(size: 82.0, middle: 0.5029),
-            Pin(size: 27.0, start: 142.0),
-            child: Text(
-              'NOMBRE',
+            Pin(size: 272.0, middle: 0.5029),
+            Pin(size: 59.0, start: 124.0),
+            child: TextField(
+              textCapitalization: TextCapitalization.sentences,
+              decoration: InputDecoration(
+                labelText: 'NOMBRE',
+                border: OutlineInputBorder(
+                  borderRadius:  BorderRadius.circular(30.0)
+                ),
+              ),
               style: TextStyle(
                 fontFamily: 'Segoe UI',
-                fontSize: 18,
+                fontSize: 19,
                 color: const Color(0xff373737),
               ),
-              textAlign: TextAlign.left,
-            ),
+              textAlign: TextAlign.center,
+              onChanged: (valor){},
+            )
           ),
           Pinned.fromPins(
             Pin(start: 61.0, end: 59.0),
@@ -172,7 +151,7 @@ class RegisterPage extends StatelessWidget {
                         color: const Color(0xff373737),
                         fontWeight: FontWeight.w600,
                       ),
-                      textAlign: TextAlign.left,
+                      textAlign: TextAlign.center,
                     ),
                   ),
                 ],
@@ -180,17 +159,24 @@ class RegisterPage extends StatelessWidget {
             ),
           ),
           Pinned.fromPins(
-            Pin(size: 95.0, middle: 0.5045),
-            Pin(size: 27.0, middle: 0.4549),
-            child: Text(
-              'TELÉFONO',
+            Pin(size: 272.0, middle: 0.5045),
+            Pin(size: 59.0, middle: 0.4549),
+            child: TextField(
+              textCapitalization: TextCapitalization.sentences,
+              decoration: InputDecoration(
+                labelText: 'TELEFONO',
+                border: OutlineInputBorder(
+                  borderRadius:  BorderRadius.circular(30.0)
+                ),
+              ),
               style: TextStyle(
                 fontFamily: 'Segoe UI',
-                fontSize: 18,
+                fontSize: 19,
                 color: const Color(0xff373737),
               ),
-              textAlign: TextAlign.left,
-            ),
+              textAlign: TextAlign.center,
+              onChanged: (valor){},
+            )
           ),
           Pinned.fromPins(
             Pin(size: 182.0, middle: 0.5),

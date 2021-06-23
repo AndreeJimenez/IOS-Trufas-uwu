@@ -39,8 +39,8 @@ class HomePage extends StatelessWidget {
             ),
           ),
           Pinned.fromPins(
-            Pin(size: 187.0, start: 37.0),
-            Pin(size: 48.0, middle: 0.3178),
+            Pin(size: 287.0, start: 37.0),
+            Pin(size: 48.0, middle: 0.3348),
             child: Text(
               'Trufas León',
               style: TextStyle(
