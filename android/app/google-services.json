@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "302712714911",
+    "project_id": "trufas-artesanales-51547",
+    "storage_bucket": "trufas-artesanales-51547.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:302712714911:android:5a3061aafa1486a86c94aa",
+        "android_client_info": {
+          "package_name": "com.example.trufas_artesanales"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "302712714911-aqtkhlkgl9m6agdpvdamc1ruip0ddui6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiezVpOtXkReRlMBxBDucACpDovh6O4WA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "302712714911-aqtkhlkgl9m6agdpvdamc1ruip0ddui6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

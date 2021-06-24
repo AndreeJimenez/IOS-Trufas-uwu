@@ -1,245 +1,208 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
-import './product_page.dart';
-import 'package:adobe_xd/page_link.dart';
+import 'package:trufas_artesanales/cart_page.dart';
 import 'package:trufas_artesanales/home_page.dart';
+import 'package:adobe_xd/page_link.dart';
 import './cart_page.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class CatalogPage extends StatelessWidget {
-  CatalogPage({
-    Key key,
-  }) : super(key: key);
+  final title = new TextStyle(
+      fontSize: 22, color: Colors.white, backgroundColor: Colors.pink[200]);
+  final subtitle = new TextStyle(
+      fontSize: 18, color: Colors.white70, backgroundColor: Colors.pink[100]);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xfff4f4f4),
-      body: Stack(
-        children: <Widget>[
-          Pinned.fromPins(
-            Pin(size: 405.3, middle: 0.5),
-            Pin(start: 14.0, end: 110.0),
-            child: PageLink(
-              links: [
-                PageLinkInfo(
-                  ease: Curves.linear,
-                  duration: 0.6,
-                  pageBuilder: () => ProductPage(),
-                ),
-              ],
-              child: SingleChildScrollView(
-                child: SizedBox(
-                  width: 405.0,
-                  height: 1108.0,
-                  child: Stack(
-                    children: <Widget>[
-                      Pinned.fromPins(
-                        Pin(start: 0.0, end: 0.0),
-                        Pin(size: 213.7, start: 0.0),
-                        child:
-                            // Adobe XD layer: 'trufas3' (shape)
-                            Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(28.0),
-                            image: DecorationImage(
-                              image: const AssetImage('assets/images/trufas1.jpg'),
-                              fit: BoxFit.fill,
-                            ),
-                          ),
-                        ),
-                      ),
-                      Pinned.fromPins(
-                        Pin(start: 0.0, end: 0.0),
-                        Pin(size: 213.7, middle: 0.7603),
-                        child:
-                            // Adobe XD layer: 'trufas3' (shape)
-                            Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(28.0),
-                            image: DecorationImage(
-                              image: const AssetImage('assets/images/trufas2.jpg'),
-                              fit: BoxFit.fill,
-                            ),
-                          ),
-                        ),
-                      ),
-                      Pinned.fromPins(
-                        Pin(start: 0.0, end: 0.0),
-                        Pin(size: 213.7, end: -305.7),
-                        child:
-                            // Adobe XD layer: 'trufas3' (shape)
-                            Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(28.0),
-                            image: DecorationImage(
-                              image: const AssetImage('assets/images/trufas3.jpg'),
-                              fit: BoxFit.fill,
-                            ),
-                          ),
-                        ),
-                      ),
-                      Pinned.fromPins(
-                        Pin(start: 0.7, end: 0.7),
-                        Pin(size: 219.0, middle: 0.3791),
-                        child:
-                            // Adobe XD layer: 'trufas2' (shape)
-                            Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(34.0),
-                            image: DecorationImage(
-                              image: const AssetImage('assets/images/trufas2.jpg'),
-                              fit: BoxFit.fill,
-                            ),
-                          ),
-                        ),
-                      ),
-                      Pinned.fromPins(
-                        Pin(start: 0.7, end: 0.7),
-                        Pin(size: 219.0, end: -85.0),
-                        child:
-                            // Adobe XD layer: 'trufas2' (shape)
-                            Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(34.0),
-                            image: DecorationImage(
-                              image: const AssetImage('assets/images/trufas2.jpg'),
-                              fit: BoxFit.fill,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
+        body: Stack(children: <Widget>[
+      _lista(),
+      Pinned.fromPins(
+        Pin(start: 0.0, end: 0.0),
+        Pin(size: 82.0, end: 0.0),
+        child: Stack(
+          children: <Widget>[
+            Pinned.fromPins(
+              Pin(start: 0.0, end: 0.0),
+              Pin(start: 0.0, end: 0.0),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: const Color(0xff373737),
                 ),
               ),
             ),
-          ),
-          Container(),
-          Pinned.fromPins(
-            Pin(start: 0.0, end: 0.0),
-            Pin(size: 82.0, end: 0.0),
-            child: Stack(
-              children: <Widget>[
-                Pinned.fromPins(
-                  Pin(start: 0.0, end: 0.0),
-                  Pin(start: 0.0, end: 0.0),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: const Color(0xff373737),
-                    ),
-                  ),
+            Pinned.fromPins(
+              Pin(size: 1.0, start: 63.0),
+              Pin(size: 1.0, middle: 0.4938),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: const Color(0xffffffff),
+                  border:
+                      Border.all(width: 1.0, color: const Color(0xff707070)),
                 ),
-                Pinned.fromPins(
-                  Pin(size: 1.0, start: 63.0),
-                  Pin(size: 1.0, middle: 0.4938),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: const Color(0xffffffff),
-                      border: Border.all(
-                          width: 1.0, color: const Color(0xff707070)),
-                    ),
-                  ),
-                ),
-                Pinned.fromPins(
-                  Pin(size: 48.0, start: 39.0),
-                  Pin(size: 45.6, middle: 0.4863),
-                  child: PageLink(
-                    links: [
-                      PageLinkInfo(
-                        ease: Curves.linear,
-                        duration: 0.3,
-                        pageBuilder: () => HomePage(),
-                      ),
-                    ],
-                    child: Stack(
-                      children: <Widget>[
-                        Pinned.fromPins(
-                          Pin(start: 0.0, end: 0.0),
-                          Pin(start: 0.0, end: 0.0),
-                          child: Stack(
-                            children: <Widget>[
-                              Pinned.fromPins(
-                                Pin(start: 0.0, end: 0.0),
-                                Pin(start: 0.0, end: 0.0),
-                                child: SvgPicture.string(
-                                  _svg_37on2f,
-                                  allowDrawingOutsideViewBox: true,
-                                  fit: BoxFit.fill,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-                Pinned.fromPins(
-                  Pin(size: 49.1, end: 46.5),
-                  Pin(size: 46.2, middle: 0.4773),
-                  child: PageLink(
-                    links: [
-                      PageLinkInfo(
-                        ease: Curves.linear,
-                        duration: 0.3,
-                        pageBuilder: () => CartPage(),
-                      ),
-                    ],
-                    child: Stack(
-                      children: <Widget>[
-                        Pinned.fromPins(
-                          Pin(start: 0.0, end: 0.0),
-                          Pin(start: 0.0, end: 0.0),
-                          child: SvgPicture.string(
-                            _svg_xak1kg,
-                            allowDrawingOutsideViewBox: true,
-                            fit: BoxFit.fill,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-                Pinned.fromPins(
-                  Pin(size: 58.2, middle: 0.4962),
-                  Pin(size: 41.8, middle: 0.5357),
-                  child: PageLink(
-                    links: [
-                      PageLinkInfo(
-                        ease: Curves.linear,
-                        duration: 0.3,
-                        pageBuilder: () => CatalogPage(),
-                      ),
-                    ],
-                    child: Stack(
-                      children: <Widget>[
-                        Pinned.fromPins(
-                          Pin(start: 0.0, end: 0.0),
-                          Pin(start: 0.0, end: 0.0),
-                          child: Stack(
-                            children: <Widget>[
-                              Pinned.fromPins(
-                                Pin(start: 0.0, end: 0.0),
-                                Pin(start: 0.0, end: 0.0),
-                                child: SvgPicture.string(
-                                  _svg_kx6hh5,
-                                  allowDrawingOutsideViewBox: true,
-                                  fit: BoxFit.fill,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ],
+              ),
             ),
-          ),
-        ],
+            Pinned.fromPins(
+              Pin(size: 48.0, start: 39.0),
+              Pin(size: 45.6, middle: 0.4863),
+              child: PageLink(
+                links: [
+                  PageLinkInfo(
+                    ease: Curves.linear,
+                    duration: 0.3,
+                    pageBuilder: () => HomePage(),
+                  ),
+                ],
+                child: Stack(
+                  children: <Widget>[
+                    Pinned.fromPins(
+                      Pin(start: 0.0, end: 0.0),
+                      Pin(start: 0.0, end: 0.0),
+                      child: Stack(
+                        children: <Widget>[
+                          Pinned.fromPins(
+                            Pin(start: 0.0, end: 0.0),
+                            Pin(start: 0.0, end: 0.0),
+                            child: SvgPicture.string(
+                              _svg_37on2f,
+                              allowDrawingOutsideViewBox: true,
+                              fit: BoxFit.fill,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Pinned.fromPins(
+              Pin(size: 49.1, end: 46.5),
+              Pin(size: 46.2, middle: 0.4773),
+              child: PageLink(
+                links: [
+                  PageLinkInfo(
+                    ease: Curves.linear,
+                    duration: 0.3,
+                    pageBuilder: () => CartPage(),
+                  ),
+                ],
+                child: Stack(
+                  children: <Widget>[
+                    Pinned.fromPins(
+                      Pin(start: 0.0, end: 0.0),
+                      Pin(start: 0.0, end: 0.0),
+                      child: SvgPicture.string(
+                        _svg_xak1kg,
+                        allowDrawingOutsideViewBox: true,
+                        fit: BoxFit.fill,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Pinned.fromPins(
+              Pin(size: 58.2, middle: 0.4962),
+              Pin(size: 41.8, middle: 0.5357),
+              child: PageLink(
+                links: [
+                  PageLinkInfo(
+                    ease: Curves.linear,
+                    duration: 0.3,
+                    pageBuilder: () => CatalogPage(),
+                  ),
+                ],
+                child: Stack(
+                  children: <Widget>[
+                    Pinned.fromPins(
+                      Pin(start: 0.0, end: 0.0),
+                      Pin(start: 0.0, end: 0.0),
+                      child: Stack(
+                        children: <Widget>[
+                          Pinned.fromPins(
+                            Pin(start: 0.0, end: 0.0),
+                            Pin(start: 0.0, end: 0.0),
+                            child: SvgPicture.string(
+                              _svg_kx6hh5,
+                              allowDrawingOutsideViewBox: true,
+                              fit: BoxFit.fill,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+      )
+    ]));
+  }
+
+  Widget _cardt2(String direccion) {
+    final card = Container(
+        child: Column(children: <Widget>[
+      FadeInImage(
+        image: NetworkImage(direccion),
+        placeholder: AssetImage('assets/jar-loading.gif'),
+        fadeInDuration: Duration(milliseconds: 500),
+        height: 220.0,
+        fit: BoxFit.cover,
       ),
+    ]));
+
+    return Container(
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(20.0),
+        child: card,
+      ),
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(20.0),
+          boxShadow: <BoxShadow>[
+            BoxShadow(
+                color: Colors.black26,
+                blurRadius: 10,
+                spreadRadius: 5,
+                offset: Offset(2.0, 10.0))
+          ],
+          color: Colors.white),
     );
+  }
+
+  Widget _lista() {
+    //FutureBuilder
+    return FutureBuilder(
+      future: _getList(),
+      initialData: [],
+      builder: (context, AsyncSnapshot<List<dynamic>> snapshot) {
+        //print('builder');
+        print(snapshot.data);
+        return ListView(
+          children: _listaImgs(snapshot.data, context),
+        );
+      },
+    );
+  }
+
+  Future<List> _getList() {
+    return Future.value([
+      'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.codigococina.com%2Fwp-content%2Fuploads%2F2015%2F12%2Ftrufas_chocolate_negro.jpg&f=1&nofb=1',
+      'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fusa.calculadoras.com.mx%2Fwp-content%2Fuploads%2F2016%2F11%2Ftrufas-de-chocolate-blanco-y-coco.jpg&f=1&nofb=1',
+      'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmir-s3-cdn-cf.behance.net%2Fproject_modules%2Fmax_1200%2F226fc019376403.562d95b4ba2d1.jpg&f=1&nofb=1'
+      'https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fimg.elo7.com.br%2Fproduct%2Fzoom%2FAC0E66%2Ftrufas-artesanais-trufa.jpg&f=1&nofb=1'
+    ]);
+  }
+
+  List<Widget> _listaImgs(List<dynamic> data, BuildContext context) {
+    final List<Widget> opciones = [];
+
+    for (int i = 0; i < data.length; i++) {
+      opciones..add(_cardt2(data[i]))..add(Divider());
+    }
+    return opciones;
   }
 }
 
