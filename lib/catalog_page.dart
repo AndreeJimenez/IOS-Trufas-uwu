@@ -145,13 +145,13 @@ class CatalogPage extends StatelessWidget {
   Widget _cardt2(String direccion) {
     final card = Container(
         child: Column(children: <Widget>[
-      FadeInImage(
-        image: NetworkImage(direccion),
-        placeholder: AssetImage('assets/jar-loading.gif'),
-        fadeInDuration: Duration(milliseconds: 500),
-        height: 220.0,
-        fit: BoxFit.cover,
-      ),
+        FadeInImage(
+          image: NetworkImage(direccion),
+          placeholder: AssetImage('assets/jar-loading.gif'),
+          fadeInDuration: Duration(milliseconds: 500),
+          height: 220.0,
+          fit: BoxFit.cover,
+        ),
     ]));
 
     return Container(
@@ -192,7 +192,6 @@ class CatalogPage extends StatelessWidget {
       'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.codigococina.com%2Fwp-content%2Fuploads%2F2015%2F12%2Ftrufas_chocolate_negro.jpg&f=1&nofb=1',
       'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fusa.calculadoras.com.mx%2Fwp-content%2Fuploads%2F2016%2F11%2Ftrufas-de-chocolate-blanco-y-coco.jpg&f=1&nofb=1',
       'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmir-s3-cdn-cf.behance.net%2Fproject_modules%2Fmax_1200%2F226fc019376403.562d95b4ba2d1.jpg&f=1&nofb=1'
-      'https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fimg.elo7.com.br%2Fproduct%2Fzoom%2FAC0E66%2Ftrufas-artesanais-trufa.jpg&f=1&nofb=1'
     ]);
   }
 

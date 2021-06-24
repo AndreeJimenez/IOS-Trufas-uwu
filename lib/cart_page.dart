@@ -82,10 +82,10 @@ class CartPage extends StatelessWidget {
             ),
           ),
           Pinned.fromPins(
-            Pin(size: 105.0, middle: 0.2972),
+            Pin(size: 145.0, middle: 0.2972),
             Pin(size: 32.0, middle: 0.7092),
             child: Text(
-              'Total: \$\$\$',
+              'Total: \$ 875',
               style: TextStyle(
                 fontFamily: 'Segoe UI',
                 fontSize: 24,
@@ -124,7 +124,7 @@ class CartPage extends StatelessWidget {
           ),
           Pinned.fromPins(
             Pin(size: 156, start: 31.2),
-            Pin(size: 80, middle: 0.2404),
+            Pin(size: 80, middle: 0.2784),
             child:
                 Container(
               decoration: BoxDecoration(
@@ -136,23 +136,10 @@ class CartPage extends StatelessWidget {
             ),
           ),
           Pinned.fromPins(
-            Pin(size: 156, start: 31.2),
-            Pin(size: 80, middle: 0.3589),
-            child:
-                Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: const AssetImage('assets/images/trufas2.jpg'),
-                  fit: BoxFit.fill,
-                ),
-              ),
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(size: 144.0, middle: 0.7535),
-            Pin(size: 30.0, start: 102.0),
+            Pin(size: 180.0, middle: 0.9135),
+            Pin(size: 60.0, start: 102.0),
             child: Text(
-              'Trufas de coco',
+              'Trufas de chocolate negro',
               style: TextStyle(
                 fontFamily: 'Segoe UI',
                 fontSize: 22,
@@ -163,24 +150,10 @@ class CartPage extends StatelessWidget {
             ),
           ),
           Pinned.fromPins(
-            Pin(size: 144.0, middle: 0.7535),
-            Pin(size: 30.0, middle: 0.2245),
+            Pin(size: 180.0, middle: 0.9135),
+            Pin(size: 60.0, middle: 0.2645),
             child: Text(
-              'Trufas de coco',
-              style: TextStyle(
-                fontFamily: 'Segoe UI',
-                fontSize: 22,
-                color: const Color(0xff373737),
-                fontWeight: FontWeight.w600,
-              ),
-              textAlign: TextAlign.left,
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(size: 144.0, middle: 0.7535),
-            Pin(size: 30.0, middle: 0.3229),
-            child: Text(
-              'Trufas de coco',
+              'Trufas de chocolate y coco',
               style: TextStyle(
                 fontFamily: 'Segoe UI',
                 fontSize: 22,
@@ -192,9 +165,8 @@ class CartPage extends StatelessWidget {
           ),
           Pinned.fromPins(
             Pin(size: 25.3, middle: 0.8071),
-            Pin(size: 25.3, start: 146.6),
+            Pin(size: 25.3, start: 159.6),
             child:
-                // Adobe XD layer: 'mas' (group)
                 Stack(
               children: <Widget>[
                 Pinned.fromPins(
@@ -219,9 +191,8 @@ class CartPage extends StatelessWidget {
           ),
           Pinned.fromPins(
             Pin(size: 25.3, middle: 0.8071),
-            Pin(size: 25.3, middle: 0.2728),
+            Pin(size: 25.3, middle: 0.3428),
             child:
-                // Adobe XD layer: 'mas' (group)
                 Stack(
               children: <Widget>[
                 Pinned.fromPins(
@@ -244,38 +215,11 @@ class CartPage extends StatelessWidget {
               ],
             ),
           ),
-          Pinned.fromPins(
-            Pin(size: 25.3, middle: 0.8071),
-            Pin(size: 25.3, middle: 0.3829),
-            child:
-                // Adobe XD layer: 'mas' (group)
-                Stack(
-              children: <Widget>[
-                Pinned.fromPins(
-                  Pin(start: 0.0, end: 0.0),
-                  Pin(start: 0.0, end: 0.0),
-                  child: Stack(
-                    children: <Widget>[
-                      Pinned.fromPins(
-                        Pin(start: 0.0, end: 0.0),
-                        Pin(start: 0.0, end: 0.0),
-                        child: SvgPicture.string(
-                          _svg_gfueaj,
-                          allowDrawingOutsideViewBox: true,
-                          fit: BoxFit.fill,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-          ),
+          
           Pinned.fromPins(
             Pin(size: 26.3, middle: 0.5519),
-            Pin(size: 2.1, start: 159.2),
+            Pin(size: 2.1, start: 172.2),
             child:
-                // Adobe XD layer: 'menos' (group)
                 Stack(
               children: <Widget>[
                 Pinned.fromPins(
@@ -300,36 +244,8 @@ class CartPage extends StatelessWidget {
           ),
           Pinned.fromPins(
             Pin(size: 26.3, middle: 0.5519),
-            Pin(size: 2.1, middle: 0.2797),
+            Pin(size: 2.1, middle: 0.3437),
             child:
-                // Adobe XD layer: 'menos' (group)
-                Stack(
-              children: <Widget>[
-                Pinned.fromPins(
-                  Pin(start: 0.0, end: 0.0),
-                  Pin(start: 0.0, end: 0.0),
-                  child: Stack(
-                    children: <Widget>[
-                      Pinned.fromPins(
-                        Pin(start: 0.0, end: 0.0),
-                        Pin(start: 0.0, end: 0.0),
-                        child: SvgPicture.string(
-                          _svg_ogle32,
-                          allowDrawingOutsideViewBox: true,
-                          fit: BoxFit.fill,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(size: 26.3, middle: 0.5519),
-            Pin(size: 2.1, middle: 0.387),
-            child:
-                // Adobe XD layer: 'menos' (group)
                 Stack(
               children: <Widget>[
                 Pinned.fromPins(
@@ -354,9 +270,9 @@ class CartPage extends StatelessWidget {
           ),
           Pinned.fromPins(
             Pin(size: 13.0, middle: 0.6747),
-            Pin(size: 30.0, start: 144.0),
+            Pin(size: 30.0, start: 159.0),
             child: Text(
-              '4',
+              '1',
               style: TextStyle(
                 fontFamily: 'Segoe UI',
                 fontSize: 22,
@@ -368,23 +284,9 @@ class CartPage extends StatelessWidget {
           ),
           Pinned.fromPins(
             Pin(size: 13.0, middle: 0.6747),
-            Pin(size: 30.0, middle: 0.2714),
+            Pin(size: 30.0, middle: 0.3394),
             child: Text(
-              '4',
-              style: TextStyle(
-                fontFamily: 'Segoe UI',
-                fontSize: 22,
-                color: const Color(0xff373737),
-                fontWeight: FontWeight.w600,
-              ),
-              textAlign: TextAlign.left,
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(size: 13.0, middle: 0.6747),
-            Pin(size: 30.0, middle: 0.3821),
-            child: Text(
-              '4',
+              '2',
               style: TextStyle(
                 fontFamily: 'Segoe UI',
                 fontSize: 22,

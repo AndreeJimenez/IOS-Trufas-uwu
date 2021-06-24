@@ -69,10 +69,10 @@ class DetailPage extends StatelessWidget {
             ),
           ),
           Pinned.fromPins(
-            Pin(size: 88.0, middle: 0.7941),
-            Pin(size: 27.0, middle: 0.6774),
+            Pin(size: 108.0, middle: 0.7941),
+            Pin(size: 30.0, middle: 0.6774),
             child: Text(
-              'Total: \$\$\$',
+              'Total: \$ 875',
               style: TextStyle(
                 fontFamily: 'Segoe UI',
                 fontSize: 20,
@@ -101,7 +101,6 @@ class DetailPage extends StatelessWidget {
             Pin(size: 156, start: 31.2),
             Pin(size: 80, middle: 0.4773),
             child:
-                // Adobe XD layer: 'trufas1' (shape)
                 Container(
               decoration: BoxDecoration(
                 image: DecorationImage(
@@ -115,7 +114,6 @@ class DetailPage extends StatelessWidget {
             Pin(size: 156, start: 31.2),
             Pin(size: 80, middle: 0.5944),
             child:
-                // Adobe XD layer: 'trufas1' (shape)
                 Container(
               decoration: BoxDecoration(
                 image: DecorationImage(
@@ -126,10 +124,10 @@ class DetailPage extends StatelessWidget {
             ),
           ),
           Pinned.fromPins(
-            Pin(size: 144.0, middle: 0.7535),
+            Pin(size: 160.0, middle: 0.7535),
             Pin(size: 30.0, middle: 0.4458),
             child: Text(
-              'Trufas de coco',
+              'Trufas de choco',
               style: TextStyle(
                 fontFamily: 'Segoe UI',
                 fontSize: 22,
@@ -140,7 +138,7 @@ class DetailPage extends StatelessWidget {
             ),
           ),
           Pinned.fromPins(
-            Pin(size: 144.0, middle: 0.7535),
+            Pin(size: 149.0, middle: 0.7535),
             Pin(size: 30.0, middle: 0.5552),
             child: Text(
               'Trufas de coco',
@@ -171,7 +169,7 @@ class DetailPage extends StatelessWidget {
             Pin(size: 13.0, middle: 0.5373),
             Pin(size: 30.0, middle: 0.4955),
             child: Text(
-              '4',
+              '2',
               style: TextStyle(
                 fontFamily: 'Segoe UI',
                 fontSize: 22,
@@ -185,7 +183,7 @@ class DetailPage extends StatelessWidget {
             Pin(size: 13.0, middle: 0.5373),
             Pin(size: 30.0, middle: 0.6049),
             child: Text(
-              '4',
+              '1',
               style: TextStyle(
                 fontFamily: 'Segoe UI',
                 fontSize: 22,
